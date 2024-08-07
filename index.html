@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mariana Garcia</title>
+      <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<div>
+<h1>Mariana García</h1>
+<p>Me apasiona temas como son: los negocios en Internet, la analitica web, la optimización web (A/B Testing, UX,...), el SEO, los móviles y el SoLoMo, el emprendimiento y las startups, las redes sociales aplicadas a los negocios, las tecnologías web, etc.  </p>
+</div>
+<hr>
+<ul>
+    <a href="#experiencia" onclick="highlight('experiencia')"><li>Experiencia profesional</li><a> 
+    <a href="#habilidades" onclick="highlight('habilidades')"><li>Habilidades y conocimientos</li></a>  
+    <a href="#educ" onclick="highlight('educ')"><li>Educación</li></a>  
+    <a href="#perfilSocial" onclick="highlight('perfilSocial')"> <li>Perfiles sociales</li></a>  
+    <a href="#contact" onclick="highlight('contact')"><li>Contactar</li></a>  
+</ul>
+
+<h2 id="experiencia">Experiencia profesional</h2>
+<table>
+<tr>
+    <th> Empresa / Organización </th>    
+    <th>Cargo</th>
+    <th>Localización</th>
+    <th> Desde - hasta </th> 
+</tr>  
+    <td>Esri Argentina</td>
+    <td>Encabezando el equipo de desarrolladores</td>
+    <td>Buenos Aires (Argentina)</td>
+    <td>Marzo 2014-Actualidad</td>
+</tr>
+<tr>
+    <td>Upplication</td>
+    <td>Programadora Front-End</td>
+    <td>Montevideo</td>
+    <td>Noviembre 2013- Marzo 2015</td>
+</tr>
+<tr>
+    <td>Universidad de la República - Ingeniería</td>
+    <td>Proferora de programacion</td>
+    <td>Montevideo</td>
+    <td>Noviembre 2013 - Marzo 2015</td>
+</tr>
+<tr>
+    <td>Google Developers Group</td>
+    <td>Coordinadora nacional</td>
+    <td>Buenos Aires (Argentina)</td>
+    <td>Setiembre 2012- Enero 2013</td>
+</tr>
+</table>
+<hr>
+<h2 id="habilidades">Habilidades y conocimientos</h2>
+<ul>
+    <li><b>Desarrollo web:</b> HTML5, CSS3, JavaScript, Python+Django, LESS & SASS, PHP, SEO, Node.js, MySQL, AngularJS, jQuery, Bootstrap, Dojo, responsive design, WorldPress, usabilidad, CoffeScript, etc.</li>
+    <li><b>Analitica web/Métricas:</b> Google Analytics, Mixpanel, segment.io, etc.</li>
+    <li><b>Gestión:</b> SCRUM, gestión de comunidades y organización de eventos, gestión de quipocs, etc. </li>
+    <li><b>Emprendimiento:</b> startup, Lean Startup, etc.</li>
+    <li><b>Aplicaciónes móviles:</b> Phonegap</li>
+    <li><b>Marketing:</b> email marketing, redes sociales, gamificación, nurture marketing, lead scoring, etc.</li>
+    <li><b>Sistemas de información geográfica (GIS):</b> ArcGIS APIs.</li>
+</ul>
+<hr>
+<h2 id="educ">Educación</h2>
+<table>
+    <tr>
+        <th>Titulo</th>
+        <th>Entidad</th>
+        <th>Promoción</th>
+    </tr>
+    <tr>
+        <td>Desarollo web</td>
+        <td>Plan Ceibal (Jóvenes a programar)</td>
+        <td>2019</td>
+    </tr>
+    <tr>
+        <td>Curso: creación de empresas</td>
+        <td>Escuela de Negocios</td>
+        <td>2009</td>
+    </tr>
+</table>
+<hr>
+<h2 id="perfilSocial">Perfiles sociales</h2>
+<p>También puedes encontrarme en:</p>
+<ul>
+    <a href="#"><li>MarianaGarcia</li></a>
+    <a href="#"><li>Github</li></a>
+    <a href="#"><li>Twitter</li></a>
+    <a href="#"><li>Linkedin</li></a>
+</ul>
+<hr>
+<h2 id="contact">Contactar</h2>
+<form>
+    <label for="para">Para:</label>
+    <input type="text" id="para" name="Para">
+    <br>
+    <label for="tematica">Temática:</label>
+    <select name="Tematica" id="tematica">
+        <option>--Elige un tema--</option>
+        <option value="">Consulta</option>
+        <option value="">Propuesta</option>
+        <option value="">Reporte</option>
+        <option value="">Otro</option>
+    </select>
+    <br>
+    <label for="asunto">Asunto:</label>
+    <input type="text" id="asunto" name="Asunto">
+    <br>
+    <label for="cuerpo">Cuerpo:</label>
+    <textarea name="Cuerpo" id="cuerpo"></textarea>
+    <input type="button" value="Enviar">   
+</form>
+<br>
+  <script>
+        function highlight(id) {
+            // Remove highlight class from all sections
+            document.querySelectorAll('h2').forEach(function(el) {
+                el.classList.remove('highlight');
+            });
+            // Add highlight class to the selected section
+            document.getElementById(id).classList.add('highlight');
+        }
+    </script>
+</body>
